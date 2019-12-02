@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PRPTypeDemo</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="read_it_together">Read it together</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="exit_message">Are you sure, You want to Exit ?</string>
+</resources>
