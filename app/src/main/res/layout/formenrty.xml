@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -9,251 +10,509 @@
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:weightSum="1"
-                android:background="@color/colorPrimaryDark"
-                android:layout_height="wrap_content">
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:textColor="#FFF"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    android:padding="5dp"
-                    android:textStyle="bold"
-                    android:text="छुते हुए गरीब परिवारों से नये गठित समूहों की संख्या एवं नाम	 "
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.8"/>
-                <ImageView
-                    android:id="@+id/ivplus1"
-                    android:layout_width="0dp"
-                    android:layout_weight=".1"
-                    android:background="@drawable/down"
-                    android:layout_height="50dp" />
-                <ImageView
-                    android:id="@+id/ivminus1"
-                    android:layout_width="0dp"
-                    android:layout_weight=".1"
-                    android:background="@drawable/up"
-                    android:layout_height="50dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="महीना"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/dark_boder">
+
+                <Spinner
+                    android:id="@+id/sppinermonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#000"
+                    android:padding="10dp" />
             </LinearLayout>
+        </LinearLayout>
 
-                <EditText
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:text="साल"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="26dp"
+                android:background="@drawable/dark_boder">
+
+                <Spinner
+                    android:id="@+id/sppinerYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#000"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"
-                    android:id="@+id/editText1"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
+                    android:background="@color/colorPrimaryDark"
+                    android:weightSum="1">
 
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=" सक्रिय महिला द्वारा  कितने परिवारों को समूहमें जोड़ा गया "
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/ivplus1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight=".1"
+                        android:background="@drawable/down" />
+
+                    <ImageView
+                        android:id="@+id/ivminus1"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight=".1"
+                        android:background="@drawable/up" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:hint="Enter Text"
+                    android:inputType="number"
+                    android:visibility="gone" />
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
+                    android:gravity="center"
+                    android:weightSum="1">
 
                     <TextView
                         android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="नए समूह ध् पुराने समूहों  को श्समूह अवधारना एवं प्रबंधनश् पर 3 से 4 दिवसीय प्रशिक्षण प्राप्त समूहों की संख्या एवं नाम	 "
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=" सक्रिय महिला द्वारा  कितने समूहका गठन किया गया  "
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
                     <ImageView
                         android:id="@+id/ivplus2"
                         android:layout_width="0dp"
+                        android:layout_height="50dp"
                         android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
+                        android:background="@drawable/down" />
+
                     <ImageView
                         android:id="@+id/ivminus2"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="match_parent" />
+                        android:background="@drawable/up" />
                 </LinearLayout>
 
                 <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:id="@+id/editText2"
-                    android:visibility="gone"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
                     android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
+                    android:hint="Enter Text"
+                    android:visibility="gone" />
 
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:weightSum="1"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
+                    android:weightSum="1">
 
                     <TextView
                         android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:padding="5dp"
-                        android:textStyle="bold"
-                        android:text="प्रशिक्षण प्राप्त  पुराने (एस0जी0एस0वाई0 ध्अन्य संस्था) समूहों की संख्या एवं नाम 		 "
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="सक्रिय महिला द्वारा इस महीने में दिए गए प्रशिक्षण की संख्या	 "
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
                     <ImageView
                         android:id="@+id/ivplus3"
                         android:layout_width="0dp"
+                        android:layout_height="50dp"
                         android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
+                        android:background="@drawable/down" />
+
                     <ImageView
                         android:id="@+id/ivminus3"
                         android:layout_width="0dp"
+                        android:layout_height="50dp"
                         android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
+                        android:background="@drawable/up" />
                 </LinearLayout>
 
-                <EditText
+                <TableLayout
+
+                    android:id="@+id/tablelayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText3"
-                    android:visibility="gone"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:stretchColumns="0,1,2"
+                    android:visibility="gone">
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#000000"
+
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.7"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text=" प्रशिक्षण का प्रकार"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="संख्या "
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#000000">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.7"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text=" M 1"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:hint=" Text"
+                            android:inputType="number"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#000000">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.7"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text=" M 2"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:hint=" Text"
+                            android:inputType="number"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#000000">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.7"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text=" M 3"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:hint=" Text"
+                            android:inputType="number"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#000000">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.7"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text=" M 4"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="1"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.3"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:hint=" Text"
+                            android:inputType="number"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    </TableRow>
+
+                </TableLayout>
 
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
+                android:layout_height="wrap_content"
 
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
+                    android:gravity="center"
+                    android:weightSum="1">
 
                     <TextView
                         android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:padding="10dp"
-                        android:textStyle="bold"
-                        android:text="समूहो की सप्ताहिक उपस्थिति बैठक की संख्या	 "
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="सक्रिय महिला द्वारा कितने समूह के बैठक का सुचारु संचालन कराया गया  "
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
                     <ImageView
                         android:id="@+id/ivplus4"
                         android:layout_width="0dp"
+                        android:layout_height="50dp"
                         android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
+                        android:background="@drawable/down" />
+
                     <ImageView
                         android:id="@+id/ivminus4"
                         android:layout_width="0dp"
+                        android:layout_height="50dp"
                         android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
+                        android:background="@drawable/up" />
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/editText3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText4"
-                    android:visibility="gone"
                     android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
+                    android:hint="Enter Text"
+                    android:visibility="gone" />
 
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
+                    android:gravity="center"
+                    android:weightSum="1">
 
                     <TextView
                         android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="10dp"
-                        android:text="पंचसुत्र पालन कर रहे समूहों की संख्या एवं नाम		 "
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="सक्रिय महिला द्वारा कितने समूह का पुस्तक संचालन कराया गया
+ "
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
                     <ImageView
                         android:id="@+id/ivplus5"
                         android:layout_width="0dp"
+                        android:layout_height="50dp"
                         android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
+                        android:background="@drawable/down" />
+
                     <ImageView
                         android:id="@+id/ivminus5"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="match_parent" />
+                        android:background="@drawable/up" />
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/editText4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText5"
-                    android:visibility="gone"
                     android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
+                    android:hint="Enter Text"
+                    android:visibility="gone" />
 
             </LinearLayout>
         </LinearLayout>
@@ -262,401 +521,71 @@
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
-                android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
                     android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
+                    android:gravity="center"
+                    android:weightSum="1">
 
                     <TextView
                         android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="छनये चिन्हित किये गए ठज्ञ की संख्या जिनकी सूची टव्ध्च्त्च्ध्ब्ब् को दी गई है।	 "
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="सक्रिय महिला के अंतर्गत कितने समूह पंचसूत्र का पालन कर रहे है "
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
                     <ImageView
                         android:id="@+id/ivplus6"
                         android:layout_width="0dp"
+                        android:layout_height="50dp"
                         android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
+                        android:background="@drawable/down" />
+
                     <ImageView
                         android:id="@+id/ivminus6"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
+                        android:background="@drawable/up" />
                 </LinearLayout>
 
                 <EditText
+                    android:id="@+id/editText5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText6"
-                    android:visibility="gone"
                     android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
+                    android:hint="Enter Text"
+                    android:inputType="number"
+                    android:visibility="gone" />
 
             </LinearLayout>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+
+                android:background="#d67601"
+                android:id="@+id/saveData"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="दर्ज़ करे"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="ग्राम संगठन के कार्यकारी समिति बैठक में भाग लिया (हाँ/नहीं)	 "
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
-                    <ImageView
-                        android:id="@+id/ivplus7"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
-                    <ImageView
-                        android:id="@+id/ivminus7"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
-                </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText7"
-                    android:visibility="gone"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="समूहों की संख्या एवं नाम जिसकी पंजिकाध् पुस्तक जाँच की गई है।	 "
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
-                    <ImageView
-                        android:id="@+id/ivplus8"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
-                    <ImageView
-                        android:id="@+id/ivminus8"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
-                </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="gone"
-                    android:id="@+id/editText8"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="समूहों की संख्या जिसकी मासिक प्रतिवेदन जाँच की गई है।	 "
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
-                    <ImageView
-                        android:id="@+id/ivplus9"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
-                    <ImageView
-                        android:id="@+id/ivminus9"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
-                </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText9"
-                    android:visibility="gone"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="नाम एवं समूहों कि संख्या जिनका बैंक खाता खोलने हेतु कागजात तैयार किया गया  ओर समूहों का नाम एवं संख्या जिनका बैंक खाता खुला	 	 		 "
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
-                    <ImageView
-                        android:id="@+id/ivplus10"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
-                    <ImageView
-                        android:id="@+id/ivminus10"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
-                </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText10"
-                    android:visibility="gone"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="संकुल स्तरीय बैठक में शामिल हुए  (हाँ/नहीं)	 "
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
-                    <ImageView
-                        android:id="@+id/ivplus11"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
-                    <ImageView
-                        android:id="@+id/ivminus11"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
-                </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText11"
-                    android:visibility="gone"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="ग्राम संगठनध्गाँव में किये गए बिभिन्न सामाजिक मुद्दों पर चर्चा एवं कार्य	 "
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
-                    <ImageView
-                        android:id="@+id/ivplus12"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
-                    <ImageView
-                        android:id="@+id/ivminus12"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
-                </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText12"
-                    android:visibility="gone"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
-
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:weightSum="1"
-                    android:gravity="center"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:textColor="#FFF"
-                        android:gravity="center"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:padding="5dp"
-                        android:text="अन्य कार्य (उल्लिखित करेद्ध) 	 "
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"/>
-                    <ImageView
-                        android:id="@+id/ivplus13"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/down"
-                        android:layout_height="50dp" />
-                    <ImageView
-                        android:id="@+id/ivminus13"
-                        android:layout_width="0dp"
-                        android:layout_weight=".1"
-                        android:background="@drawable/up"
-                        android:layout_height="50dp" />
-                </LinearLayout>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/editText13"
-                    android:visibility="gone"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:hint="Enter Text"/>
-
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>

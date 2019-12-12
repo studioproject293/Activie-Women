@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 
 import com.example.prptypedemo.Constant;
 import com.example.prptypedemo.R;
+import com.example.prptypedemo.model.HeaderData;
 
 public class HomeFragment extends BaseFragment  {
 
@@ -21,7 +22,7 @@ public class HomeFragment extends BaseFragment  {
     @Override
     public void onResume() {
         super.onResume();
-
+        mListener.onFragmentUpdate(Constant.setTitle,new HeaderData(false,"सक्रिय महिला "));
     }
 
     @Override

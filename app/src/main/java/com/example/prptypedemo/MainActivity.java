@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentManager;
 import com.example.prptypedemo.fragment.EntryFormFragment;
 import com.example.prptypedemo.fragment.HomeFragment;
 import com.example.prptypedemo.listener.OnFragmentInteractionListener;
+import com.example.prptypedemo.model.HeaderData;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -62,7 +63,11 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
     @Override
     public void onFragmentUpdate(int type, Object data) {
         switch (type) {
-
+            case Constant.setTitle:
+                HeaderData headerData = (HeaderData) data;
+                textheader.setVisibility(View.VISIBLE);
+                textheader.setText(headerData.getText());
+                break;
         }
     }
 
